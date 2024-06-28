@@ -5,7 +5,7 @@ const Footer = () => {
     <section className="bg-[#F5F4FF]  lg:h-[420px] max-lg:h-[500px]  lg:px-16 lg:p-[70px] ">
       <div className=" lg:flex lg:justify-between max-lg:text-center">
         <div>
-          <h4 className="font-bright lg:text-8xl max-lg:text-16xl  font-custom  ">Bright</h4>
+          <h4 className="font-Caprasimo lg:text-8xl max-lg:text-16xl ">Bright</h4>
           <p className="text-base text-blackish font-montserrat lg:text-start w-[348px] h-[87px] mt-2  max-lg:mx-auto ">
             BRIGHT, an e-learning platform revolutionizes learning with
             interactive education and gamification, making it easier and more
