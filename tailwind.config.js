@@ -23,6 +23,7 @@ module.exports = {
         caprasimo: ['Caprasimo', 'sans-serif'],
         montserrat: "Montserrat",
         robotoserif: ['Roboto Serif', 'serif'],
+        inter: ['Inter', 'sans-serif'],
        
     },
     boxShadow: {

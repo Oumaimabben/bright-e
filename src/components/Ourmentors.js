@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import ellipse from '../assests/Ellipse 299.png'; // Import your mentor image
+import ellipse from '../assets/Ellipse 299.png'; // Import your mentor image
 import Rating from './Rating';
 
 const OurMentors = () => {

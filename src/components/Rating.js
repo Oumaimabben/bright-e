@@ -1,7 +1,7 @@
 import React from "react";
-import star from "../assests/star.png"; // Assurez-vous que star.png est correctement importé
-import star1 from "../assests/star1.svg"; // Assurez-vous que star1.svg est correctement importé
-import emptyStarSVG from "../assests/emptystar.svg";
+import star from "../assets/star.png"; // Assurez-vous que star.png est correctement importé
+import star1 from "../assets/star1.svg"; // Assurez-vous que star1.svg est correctement importé
+import emptyStarSVG from "../assets/emptystar.svg";
 const Rating = (props) => {
   return (
     <div className="flex mt-[4px] space-x-1 items-center">

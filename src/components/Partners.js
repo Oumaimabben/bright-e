@@ -1,6 +1,6 @@
 import React from "react";
-import microsoft from '../assests/microsoft.png';
-import coursera from '../assests/coursera.png';
+import microsoft from '../assets/microsoft.png';
+import coursera from '../assets/coursera.png';
 
 const Partners = () => {
   

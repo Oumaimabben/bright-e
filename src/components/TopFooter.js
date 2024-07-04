@@ -1,8 +1,8 @@
 import React from 'react'
-import rectangle2 from '../assests/Rectangle2.png';
-import vector2 from '../assests/Vector2.png';
-import vector1 from '../assests/Vector1.png';
-import rectangle1 from '../assests/Rectangle1.png';
+import rectangle2 from '../assets/Rectangle2.png';
+import vector2 from '../assets/Vector2.png';
+import vector1 from '../assets/Vector1.png';
+import rectangle1 from '../assets/Rectangle1.png';
 
 export default function TopFooter() {
   return (

@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import course1 from '../assests/course1.png';
-import course2 from '../assests/course2.png';
-import course3 from '../assests/course3.png';
+import course1 from '../assets/course1.png';
+import course2 from '../assets/course2.png';
+import course3 from '../assets/course3.png';
 import Rating from './Rating';
 
 const PopularCourses = () => {
