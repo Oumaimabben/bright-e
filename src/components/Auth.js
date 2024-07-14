@@ -81,7 +81,7 @@ const Auth = ({ showModal, onClose, openSignIn }) => {
 </button>
 
           </form>
-          <button onClick={onClose} className="absolute top-0 right-0 mt-2 mr-2 text-white text-2xl font-bold">X</button>
+          <button onClick={onClose} className="absolute top-0 right-0 mt-2 mr-2 text-black  ">X</button>
         </div>
       </div>
     </div>
@@ -156,45 +156,47 @@ const SignIn = ({ showModal, onClose, openSignUp }) => {
               </span>
             </button>
           </div>
-          <button onClick={onClose} className="absolute top-0 right-0 mt-2 mr-2 text-white text-2xl font-bold">X</button>
+          <button onClick={onClose} className="absolute top-0 right-0 mt-2 mr-2 text-black text-2xl font-bold">X</button>
         </div>
       </div>
     </div>
   );
 };
 
-const App = () => {
+const App = ({ buttonText, buttonAction,buttonSize }) => {
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
 
-  const openSignIn = () => {
-    setShowSignIn(true);
-    setShowSignUp(false);
+  const openModal = (modalType) => {
+    if (modalType === 'signIn') {
+      setShowSignIn(true);
+      setShowSignUp(false);
+    } else if (modalType === 'signUp') {
+      setShowSignUp(true);
+      setShowSignIn(false);
+    }
   };
 
-  const openSignUp = () => {
-    setShowSignUp(true);
-    setShowSignIn(false);
-  };
-
-  const closeSignIn = () => {
-    setShowSignIn(false);
-  };
-
-  const closeSignUp = () => {
-    setShowSignUp(false);
+  const closeModal = (modalType) => {
+    if (modalType === 'signIn') {
+      setShowSignIn(false);
+    } else if (modalType === 'signUp') {
+      setShowSignUp(false);
+    }
   };
 
   return (
     <div className="App">
-      <button onClick={openSignIn} className="relative h-10 w-36 py-1 px-3 border mt-2 ml-28 border-black text-black font-semibold bg-white">
+      {/* Bouton dynamique */}
+      <button onClick={() => openModal(buttonAction)} className="relative h-10 w-${buttonSize} py-1 px-3 border mt-2 ml-28 border-black text-black font-semibold bg-white cursor-pointer hover:transform hover:translate-x-[-2px] hover:translate-y-[2px]">
         <span className="absolute inset-0 border border-black transform -translate-x-1 translate-y-1 bg-purp z-0"></span>
         <span className="absolute inset-0 border border-black bg-white z-10"></span>
-        <span className="relative z-20 font-caprasimo text-[26px] font-normal">Login</span>
+        <span className="relative z-20 font-caprasimo text-[26px] font-normal">{buttonText}</span>
       </button>
-      
-      <Auth showModal={showSignUp} onClose={closeSignUp} openSignIn={openSignIn} />
-      <SignIn showModal={showSignIn} onClose={closeSignIn} openSignUp={openSignUp} />
+
+  
+      <Auth showModal={showSignUp} onClose={() => closeModal('signUp')} openSignIn={() => openModal('signIn')} />
+      <SignIn showModal={showSignIn} onClose={() => closeModal('signIn')} openSignUp={() => openModal('signUp')} />
     </div>
   );
 };

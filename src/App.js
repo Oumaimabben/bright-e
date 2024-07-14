@@ -3,13 +3,10 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './pages/Home';
-import TopFooter from './components/TopFooter';
-import Partners from './components/Partners';
-import Popularcourses from './components/Popularcourses';
-import WhyUs from './components/Whyus';
-import TopCathegories from './components/TopCathegories';
-import OurMentors from './components/Ourmentors';
+
+
 import Auth from './components/Auth';
+import Courses from './pages/Courses';
 //import Popup from './components/Popup';
 function App() {
   return (
@@ -19,13 +16,9 @@ function App() {
   <Routes> 
    <Route path='/' element={< Home/>}/>
    <Route path="/signup" element={<Auth/>} />
+   <Route path="/courses" element={<Courses/>} /> 
   </Routes>
-  <Popularcourses/>
-  <OurMentors/>
-  <TopCathegories/>
-  <WhyUs/>
-  <Partners/>
-  <TopFooter/>
+  
   <Footer/>
   </BrowserRouter>
   );

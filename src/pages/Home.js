@@ -2,8 +2,22 @@ import CursorImage from '../assets/Cursor.png';
 import girl from '../assets/girl.gif';
 import newImage from '../assets/Group.svg';
 import rectangle from '../assets/Rectangle 10.png';
+import OurMentors from '../components/Ourmentors';
+import Partners from '../components/Partners';
+import PopularCourses from '../components/Popularcourses';
+import TopCathegories from '../components/TopCathegories';
+import TopFooter from '../components/TopFooter';
+import WhyUs from '../components/Whyus';
+import App from '../components/Auth';
+
 
 export default function Home() {
+
+  const buttonText = "Sign Up Now";
+  const buttonAction = "signUp";
+  const buttonSize = "50";
+ 
+
   return (
     <div>
       <div
@@ -29,11 +43,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-start space-y-4">
-            <button className="relative w-56 h-12 py-1 px-3 border border-black text-black font-semibold bg-white">
-              <span className="absolute inset-0 border border-black transform -translate-x-1 translate-y-1 bg-[#a19ef7] z-0"></span>
-              <span className="absolute inset-0 border border-black bg-white z-10"></span>
-              <span className="relative z-20 font-caprasimo text-[26px] font-normal">Sign Up now</span>
-            </button>
+      <App buttonText={buttonText} buttonAction={buttonAction}  buttonSize={buttonSize} />
             <div className="flex flex-col items-start mt-2">
               <img src={CursorImage} alt="cursor" className="w-13 ml-16" />
               <button className="bg-[#A19EF7] text-white font-montserrat px-6 py-1 rounded-none mt-[-50px] ml-[121px]">
@@ -42,15 +52,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Right Section */}
         <div className="w-[630px] flex justify-center mb-[-40px] h-[408px] mt-52 relative z-10">
           <div className="relative">
-            <img src={rectangle} alt="Background" className="absolute top-0 left-0 z-0 w-[300px] h-[424px] ml-64  -m-16" style={{ zIndex: -1 }} />
-            <img src={girl} alt="Illustration" className="max-w-[631px] h-auto relative z-10" style={{ zIndex: 10 }} />
+            <img src={rectangle} alt="Background" className="absolute top-0 left-0 z-0 w-[350px] h-[424px] ml-48 -m-16 " style={{ zIndex: -1 }} />
+            <img src={girl} alt="Illustration" className="max-w-[600px] h-auto relative z-10" style={{ zIndex: 10 }} />
           </div>
         </div>
 
       </div>
       <div className="mt-8"></div>
+      <PopularCourses/>
+     <OurMentors/>
+     <TopCathegories/>
+     <WhyUs/>
+    <Partners/>
+    <TopFooter/>
     </div>
   );
 }
