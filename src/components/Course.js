@@ -1,5 +1,3 @@
-// Course.js
-
 import React from 'react';
 import course1 from '../assets/course1.png';
 import course2 from '../assets/course2.png';
@@ -20,12 +18,12 @@ export const cards = [
   },
   {
     id: 2,
-    title: 'Leadership,Team and Project Management',
+    title: 'Leadership, Team and Project Management',
     subtitle: 'John Blake Doe',
-    description: 'Learn about leadership,team dynamics,and project management essentials with John Blake Doe.',
+    description: 'Learn about leadership, team dynamics, and project management essentials with John Blake Doe.',
     image: course2,
     rate: 4.5,
-    price: 80.0000,
+    price: 80.000,
   },
   {
     id: 3,
@@ -34,7 +32,7 @@ export const cards = [
     description: 'Explore the mysteries of Norse history and delve into the lost ages with Magnus Glare.',
     image: course3,
     rate: 2.5,
-    price: 80.0000,
+    price: 80.000,
   },
   {
     id: 4,
@@ -43,7 +41,7 @@ export const cards = [
     description: 'Master advanced React techniques and patterns with Chris Evans.',
     image: course3,
     rate: 5,
-    price: 80.0000,
+    price: 80.000,
   },
   {
     id: 5,
@@ -52,7 +50,7 @@ export const cards = [
     description: 'Master advanced React techniques and patterns with Chris Evans.',
     image: course3,
     rate: 3.4,
-    price: 80.0000,
+    price: 80.000,
   },
   {
     id: 6,
@@ -61,32 +59,30 @@ export const cards = [
     description: 'Master advanced React techniques and patterns with Chris Evans.',
     image: course3,
     rate: 4.5,
-    price: 80.0000,
+    price: 80.000,
   },
 ];
 
 const Course = () => {
   return (
-    <div className="container mx-auto px-4 py-8 relative">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {/* Mapping sur les cartes pour générer chaque carte */}
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card) => (
-          <div key={card.id} className="bg-white p-4 w-full h-[420px] flex flex-col justify-between shadow-lg rounded-lg">
+          <div key={card.id} className="bg-white p-4 w-full h-auto flex flex-col justify-between shadow-lg rounded-lg">
             <img src={card.image} alt={card.title} className="h-40 w-full object-cover mb-4 rounded" />
             <div className="flex flex-col flex-grow">
               <div className="flex-grow">
-                <h2 className="font-semibold text-xl">{card.title}</h2>
-                <h3 className="text-md text-gray-500">{card.subtitle}</h3>
-                <p className="text-gray-600 mt-2">{card.description}</p>
+                <h2 className="font-semibold text-lg sm:text-xl">{card.title}</h2>
+                <h3 className="text-sm sm:text-md text-gray-500">{card.subtitle}</h3>
+                <p className="text-gray-600 mt-2 text-sm sm:text-base">{card.description}</p>
               </div>
               <div className="mt-4 flex justify-between items-center">
-                {/* Bouton Enroll avec styles personnalisés */}
-                <Button  name={"Enroll"} color={"purp"} />
-                <div className="flex flex-col items-start ml-4">
-                  <p className="text-darkBlue text-[22px] font-caprasimo font-normal mt-1 ml-12">
+                <Button name="Enroll" color="purp" />
+                <div className="flex flex-col items-start sm:ml-4">
+                  <p className="text-darkBlue text-lg sm:text-[22px] font-caprasimo font-normal mt-1 ml-7">
                     {card.price} 000 DT
                   </p>
-                  <Rating rate={card.rate} /> {/* Passage de la propriété rate à Rating */}
+                  <Rating rate={card.rate} />
                 </div>
               </div>
             </div>
