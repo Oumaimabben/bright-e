@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ color, colorr, name, onClick, width = "w-32", height = "h-14" }) => {
+const Button = ({ color, colorr, name, onClick, width = "", height = "" }) => {
   return (
     <button
       onClick={onClick}
