@@ -1,17 +1,28 @@
 import search from "../assets/searchIcon.png"
 import clock from "../assets/clock.png"
 import flag from "../assets/flag-line.png"
-import Button from "../components/Button"
 import chevron from "../assets/chevron-bas.png"
+import { useNavigate } from "react-router-dom";
 
 const Coursesd = () => {
- 
+  const navigate = useNavigate();
+
+  const handleAddCourse = () => {
+    navigate('/addcourse');
+  };
   return (
     <div className="flex bg-neutral-50 ml-5 w-[1100px]">
 <div>
 <div className="flex items-center justify-between mt-8 ml-14 mr-14">
   <h1 className="font-semibold text-3xl mb-0 text-gray-700">Courses</h1>
-  <Button name={"Add course"} color={"purp"} width={"18"} />
+  <button
+            className="relative w-full lg:w-28 h-8 py-1 px-4 border border-grey text-black bg-white"
+            onClick={handleAddCourse}
+          >
+            <span className="absolute inset-0 border border-black transform -translate-x-1 translate-y-1 bg-purp z-0"></span>
+            <span className="absolute inset-0 border border-black bg-white z-10 flex items-center justify-center"></span>
+            <span className="relative z-20 font-montserrat font-normal">Add course</span>
+          </button>
 </div>
 
 

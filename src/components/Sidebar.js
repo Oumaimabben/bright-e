@@ -9,6 +9,7 @@ import discussionIcon from '../assets/note.svg';
 import scheduleIcon from '../assets/calendar.svg';
 import certificatesIcon from '../assets/document-text.svg';
 import accountIcon from '../assets/Mentor.png';
+import Button from './Button';
 
 const menuItems = [
   { href: '/dashboard', title: 'Dashboard', icon: dashboardIcon },
@@ -44,8 +45,8 @@ const Sidebar = () => (
           </li>
         ))}
       </ul>
-      <button className="bg-red-400 text-white py-2 px-4 mt-6 w-full">Log out</button>
     </nav>
+    <Button name={"Log out"} color={"purp"}  width={""} />
   </aside>
 );
 

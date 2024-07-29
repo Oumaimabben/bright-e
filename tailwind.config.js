@@ -18,6 +18,7 @@ module.exports = {
         red:"hsla(354, 74%, 47%, 1)",
         blur:"rgba(23, 23, 23, 0.53)",
         blue:"#A0C6E8",
+        redd: "#CF1F30",
       },
       fontFamily: {
         caprasimo: ['Caprasimo', 'sans-serif'],

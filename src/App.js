@@ -11,6 +11,7 @@ import Mentors from './components/Mentors';
 import Coursesd from './components/Coursesd';
 import Certificates from './components/Certificates';
 import Dashboard from '../src/components/dashboard';
+import AddCourse from './pages/AddCourse';
 
 function App() {
   return (
@@ -83,7 +84,10 @@ function App() {
           </Layout>
         }
       />
+      
       <Route path="/dashbord" element={<Dashbord />} />
+      <Route path="/addcourse" element={<AddCourse/>} />
+
     </Routes>
   );
 }
