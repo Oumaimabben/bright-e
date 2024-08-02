@@ -4,13 +4,13 @@ import Home from './pages/Home';
 import Auth from './components/Auth';
 import Courses from './pages/Courses';
 import Dashbord from './pages/Dashbord';
-import Users from './components/Users';
+import Users from './pages/Users';
 import Layout from './components/Layout';
 import MainLayout from './components/MainLayout';
-import Mentors from './components/Mentors';
-import Coursesd from './components/Coursesd';
-import Certificates from './components/Certificates';
-import Dashboard from '../src/components/dashboard';
+import Mentors from './pages/Mentors';
+import Coursesd from './pages/Coursesd';
+import Certificates from './pages/Certificates';
+import Dashboard from '../src/pages/dashboard';
 import AddCourse from './pages/AddCourse';
 
 function App() {
