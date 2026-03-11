@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# Bright-E 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bright-E is a **React.js educational platform interface** that allows users to explore courses, manage mentors, view certificates, and access a dashboard with analytics.
 
-## Available Scripts
+The project provides a **modern UI for an e-learning platform** with reusable components and a structured React architecture.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 📌 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* 📚 Browse and explore courses
+* 👨‍🏫 Mentor listing and mentor profiles
+* 🏆 Certificates page
+* 📊 Dashboard with charts and statistics
+* ➕ Add courses and quizzes
+* 🎥 Add course videos
+* 🔐 Authentication interface
+* 📄 Pagination system
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 🏗️ Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+bright-e
+│
+├── public
+│
+├── src
+│   ├── Assets
+│   │
+│   ├── components
+│   │   ├── Auth.js
+│   │   ├── Button.js
+│   │   ├── Card.js
+│   │   ├── Course.js
+│   │   ├── ExploreCourses.js
+│   │   ├── Footer.js
+│   │   ├── Header.js
+│   │   ├── Layout.js
+│   │   ├── LineChart.js
+│   │   ├── MainLayout.js
+│   │   ├── Pagination.js
+│   │   ├── Popularcourses.js
+│   │   ├── Rating.js
+│   │   ├── Sidebar.js
+│   │   ├── SingleMentor.js
+│   │   └── Squarechart.js
+│   │
+│   ├── pages
+│   │   ├── Home.js
+│   │   ├── Dashboard.js
+│   │   ├── Courses.js
+│   │   ├── Mentors.js
+│   │   ├── Certificates.js
+│   │   ├── Users.js
+│   │   └── AddCourse.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   ├── App.css
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# ⚙️ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React.js
+* JavaScript (ES6)
+* CSS
+* Tailwind CSS
+* Chart components
+* React component architecture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+# 💻 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/yourusername/bright-e.git
+cd bright-e
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+Run the project:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application will start on:
 
-### Code Splitting
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+# 📊 Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The dashboard includes visual components such as:
 
-### Making a Progressive Web App
+* Line Chart
+* Square Chart
+* Statistics cards
+* User and course analytics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+# 📚 Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Home
+* Courses
+* Mentors
+* Certificates
+* Users
+* Dashboard
+* Add Course
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# screenshot
+<img width="1847" height="1007" alt="Screenshot from 2026-03-12 00-01-06" src="https://github.com/user-attachments/assets/08bc9b09-06fd-43e2-8d28-e701cebcb5a9" />
+<img width="1847" height="1007" alt="Screenshot from 2026-03-11 23-59-20" src="https://github.com/user-attachments/assets/c722fbf1-b0ee-471e-9832-d347955fc4e3" />
+<img width="1847" height="1007" alt="Screenshot from 2026-03-11 23-59-05" src="https://github.com/user-attachments/assets/5671df87-d3c1-4e27-9481-28c4ef4340c7" />
+<img width="1847" height="1007" alt="Screenshot from 2026-03-11 23-55-02" src="https://github.com/user-attachments/assets/a7bae294-949b-4cc9-902f-34bc0c2ef382" />
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 👩‍💻 Author
+
+**Oumaima Ben Othman**
+
+Software Engineering Student
+Full Stack MERN Developer
+
+
+
